@@ -1,0 +1,32 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+
+.custom-nav {
+  background-color: #5db8f5;
+}
+
+.custom-select,
+.custom-input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.news {
+  margin-top: 40px;
+}
+
+.news-form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.search-btn {
+  background-color: #26a69a;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

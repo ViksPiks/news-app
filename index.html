@@ -6,7 +6,58 @@
     <title>News-App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <nav class="navbar custom-nav">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-white" href="/">News</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="news">
+          <form name="news-form" class="news-form">
+            <h2 class="h3">Search news</h2>
+
+            <div>
+              <label class="form-label" for="country">Country</label>
+              <select
+                class="form-select custom-select"
+                name="country"
+                id="country"
+              >
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="de">Germany</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="autocomplete-input">Search</label>
+              <input
+                type="text"
+                id="autocomplete-input"
+                class="form-control custom-input"
+                name="search"
+                placeholder="Latest news in NY"
+              />
+            </div>
+
+            <div>
+              <button
+                class="btn btn-success search-btn text-uppercase"
+                type="submit"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
