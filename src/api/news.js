@@ -1,4 +1,4 @@
-const API_KEY = "84c9d840b71541d4afa2551710842305";
+const API_KEY = import.meta.env.VITE_API_KEY;
 const API_URL = `https://newsapi.org/v2`;
 
 const getNews = async (url) => {

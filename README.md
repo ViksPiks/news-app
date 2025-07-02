@@ -4,6 +4,8 @@
 
 ## How to run the project
 
+Rename **.env.example** file to **.env** and use your API KEY for [News API](https://newsapi.org/)
+
 ```bash
 npm install
 ```
