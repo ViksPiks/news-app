@@ -14,6 +14,7 @@
 
 .news {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .news-form {
@@ -29,4 +30,19 @@
   border-radius: 2px;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#news {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-article-photo {
+  background-color: rgb(235, 233, 233);
+  height: 200px;
+  object-fit: cover;
 }
