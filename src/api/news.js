@@ -14,12 +14,12 @@ const getNews = async (url) => {
   }
 };
 
-export const getTopHeadlines = async (countryCode = "us") => {
-  const url = `${API_URL}/top-headlines?apiKey=${API_KEY}&country=${countryCode}`;
-  return getNews(url);
-};
-
-export const getAllNews = async (query) => {
-  const url = `${API_URL}/everything?apiKey=${API_KEY}&q=${query}`;
+export const getTopHeadlines = async (countryCode = "us", query) => {
+  const url = new URL(
+    `${API_URL}/top-headlines?apiKey=${API_KEY}&country=${countryCode}`
+  );
+  if (query) {
+    url.searchParams.append("q", query);
+  }
   return getNews(url);
 };
